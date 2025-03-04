@@ -1,0 +1,43 @@
+/* General Styles */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+}
+
+/* Container */
+.content-container { 
+    max-width: 800px; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* News and Article Items */
+.item { 
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+}
+.item:last-child { 
+    border-bottom: none; 
+}
+.source { 
+    font-size: 14px; 
+    color: gray; 
+}
+
+/* Headings and Links */
+h1 { text-align: center; }
+h2 { font-size: 20px; margin: 5px 0; }
+a { text-decoration: none; color: #007bff; }
+a:hover { text-decoration: underline; }
+
+/* Image Styling */
+img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px; }
+
+/* Nav Bar */
+nav { background: #007bff; padding: 10px; }
+nav a { color: white; margin-right: 15px; text-decoration: none; }

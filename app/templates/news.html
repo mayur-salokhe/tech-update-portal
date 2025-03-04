@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Latest News{% endblock %}
+
+{% block content %}
+    <div class="news-container">
+        <h1>Latest Tech Updates</h1>
+        {% for article in news_articles %}
+            <div class="news-item">
+                <span class="source">{{ article.source }}</span>
+                <h2><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h2>
+                <p><strong>Published:</strong> {{ article.published }}</p>
+            </div>
+        {% else %}
+            <p>No news available at the moment.</p>
+        {% endfor %}
+    </div>
+{% endblock %}
